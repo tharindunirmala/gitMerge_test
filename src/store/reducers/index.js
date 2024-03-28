@@ -11,6 +11,7 @@ import room from './room';
 import accommodation from './accommodation';
 import university from './university'
 import systemBooking from './booking';
+import offer from './offer';
 // ==============================|| COMBINE REDUCERS ||============================== //
 
 const reducers = combineReducers({
@@ -28,7 +29,8 @@ const reducers = combineReducers({
   room,
   accommodation,
   systemAdmin,
-  systemBooking
+  systemBooking,
+  offer
   
 });
 
