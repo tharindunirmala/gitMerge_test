@@ -54,6 +54,10 @@ const AccommodationListPage = Loadable(
   lazy(() => import("pages/hotel/accommodation"))
 );
 
+const OfferListPage = Loadable(
+  lazy(() => import("pages/offers/offer"))
+);
+
 const BookingListPage = Loadable(lazy(() => import("pages/booking/booking")));
 
 //room
@@ -355,6 +359,20 @@ const MainRoutes = {
             {
               path: "room-list",
               element: <RoomListPage />,
+            },
+            {
+              path: "university-card",
+              element: <AppCustomerCard />,
+            },
+          ],
+        },
+
+        {
+          path: "offer",
+          children: [
+            {
+              path: "offer-list",
+              element: <OfferListPage />,
             },
             {
               path: "university-card",
